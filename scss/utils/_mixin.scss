@@ -1,0 +1,16 @@
+//mixin con parametros
+
+@mixin estilos-base($width, $height, $border, $margin) {
+  width: $width;
+  height: $height;
+  border: $border;
+  margin: $margin;
+}
+
+//mixin sin parametros
+
+@mixin center {
+  text-align: center;
+  padding: 4px;
+  text-decoration: none;
+}

@@ -1,0 +1,112 @@
+main {
+  min-height: 80vh;
+  font-family: titillium;
+
+  //imagen inicio
+  div {
+    img {
+      object-fit: cover;
+      @include estilos-base(
+        98%,
+        60vh,
+        5px solid rgb(87, 46, 3),
+        1rem 1rem 1rem 1rem
+      );
+    }
+  }
+}
+
+//titulos y forma del contacto
+main {
+  h1 {
+    text-align: center;
+    padding: 5px;
+    font-size: 50px;
+    color: $h1-color;
+  }
+
+  h2 {
+    text-align: center;
+    color: $text-color;
+    font-size: 27px;
+  }
+
+  form {
+    color: $text-color;
+    font-size: 20px;
+    text-align: center;
+    padding: 30px;
+    text-decoration: none;
+  }
+}
+
+//texto bajo imagen de inicio y bajo imagenes de galeria
+main {
+  div {
+    p {
+      font-size: 20px;
+      text-align: center;
+      padding: 30px;
+      text-decoration: none;
+      color: $text-color;
+    }
+  }
+}
+
+//nombres platos carta
+main {
+  ul {
+    text-decoration: none;
+    padding-left: 0rem;
+
+    li {
+      text-align: center;
+
+      strong {
+        font-size: 25px;
+        text-align: center;
+        @extend %estilos;
+      }
+    }
+  }
+}
+
+//descripcion platos carta
+main {
+  ul {
+    li {
+      @include center;
+      article {
+        p {
+          color: black;
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+//nosotros
+main {
+  min-height: 90vh;
+  p {
+    @include center;
+    color: $text-color;
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+
+//imagenes galeria
+div {
+  article {
+    img {
+      object-fit: cover;
+      max-width: 80%;
+      min-width: 70%;
+      max-height: 80%;
+      min-height: 70%;
+      margin: 1rem 1rem 1rem 2rem;
+    }
+  }
+}
